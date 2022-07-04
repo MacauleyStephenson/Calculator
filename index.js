@@ -10,27 +10,40 @@ class Calculator {
 	constructor(previousOperandTextElement, currentOperandTextElement) {
 		this.previousOperandTextElement = previousOperandTextElement
 		this.currentOperandTextElement = currentOperandTextElement
-		this.clear()
+		this.clear();
 	}
-}
 
-clear(){
 
-}
+	clear() {
+		this.currentOperand = '';
+		this.previousOperand = '';
+		this.operation = undefined;
+	}
 
-delete (){
+	delete() {
 
-}
+	}
 
-appendNumber(number){
+	appendNumber(number) {
 
-}
+	}
 
-chooseOperation(operation) {
-}
+	chooseOperation(operation) {
+	}
 
-compute() {
-}
+	compute() {
+	}
 
-updateDisplay() {
+	updateDisplay() {
+	}
+
+	// const calculator = new Calculator(previousOperandTextElement, currentOperandTextElement)
+
+	// numberButtons(button => {
+	// 	button.addEventListener('click', () => {
+	// 		calculator.appendNumber(button.innerText)
+	// 		calculator.updateDisplay()
+	// 	})
+	// })
+
 }
