@@ -30,7 +30,7 @@ class Calculator {
 	}
 
 	delete() {
-
+		this.currentOperand = this.currentOperand.toString().slice(0, -1)
 	}
 
 	appendNumber(number) {
@@ -55,7 +55,10 @@ class Calculator {
 	}
 
 	updateDisplay() {
+		if (this.operation != null) {
+			this.previousOperandTextElement.innerText =
+				`${this.getDisplayNumber(this.previousOperand)} ${this.operation}`
+		}
+
 	}
-
-
 }
